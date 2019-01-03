@@ -5,7 +5,7 @@ public class CentralinaElaborazione implements Observer {
     private static int ID = 0;
     private int id;
     ArrayList<String> updates = new ArrayList<String>();
-    StazioneMeteo stazione; //
+    StazioneMeteo stazione; //FIXME se metto Subject stazione poi mi viene errore dopo  in "get last state (linea 19), perchè? Non "defeat" the purpose di aver fatto l'interfaccia?
 
     public CentralinaElaborazione(StazioneMeteo stazione){
         this.id = ID;
